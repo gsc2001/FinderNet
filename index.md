@@ -2,7 +2,7 @@
 
 Please refer to the supplementary material for the necessary details mentioned in the main paper. 
 
-Supplementary material: [link](https://drive.google.com/file/d/1QAMd-gEOPy4U_RiFFOJ55Fyi88whHvaz/view?usp=share_link)
+Supplementary material: [link](https://drive.google.com/file/d/1elhW6kbrzEARtcHQQSLU0ENWeB4vegbc/view?usp=share_link)
 
-Completion of this webpage is in progress and final version would be up soon. Stay tuned
+Completion of this webpage is in progress. Stay tuned
 
