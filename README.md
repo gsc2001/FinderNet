@@ -7,18 +7,24 @@ We focus on the problem of LiDAR point cloud based loop detection (or Finding) a
 
 ![](https://github.com/gsc2001/FinderNet/blob/main/Images/Main.png)
 
-## Canonicalization and DEM Creation 
+### Installation Instructions
+
+1. Install [PyTorch](https://pytorch.org/)
+2. Install the requirements ```pip install -r requirements.txt```
 
 
-## Download the Pre-Processed DEM
+### Canonicalization and DEM Creation 
+
+
+### Download the Pre-Processed DEM
 
 Please download the preprocessed DEM for various datasets in this [link](https://drive.google.com/drive/folders/19FZUBr8iLdD033HEz-rgrpoSSaydRb0F?usp=sharing)
 
 
-## Training FinderNet
+### Training FinderNet
 
 
-## Inference 
+### Inference 
 
 
-## System Details  
+
