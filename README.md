@@ -16,11 +16,16 @@ We focus on the problem of LiDAR point cloud based loop detection (or Finding) a
 ### Canonicalization and DEM Creation 
 
 
-### Download the Pre-Processed DEM
+#### Download the Pre-Processed DEM
 
 Please download the preprocessed DEM for various datasets in this [link](https://drive.google.com/drive/folders/19FZUBr8iLdD033HEz-rgrpoSSaydRb0F?usp=sharing)
 
+#### DEM Generation for Custom Dataset 
 
+```
+python3 DEM\ Generation/CreateDEM.py --PCD_path <Set the path to the directory of point clouds> --DEM_save_path <Path to save the resulting DEM>
+
+```
 
 ### Training FinderNet
 ```
@@ -37,10 +42,4 @@ python3 Inference/Inference2.py --base_path <Path to DEM folder> --ckpt_path <Pa
 
 Please download the pretrained models from the [link]()
 
-### DEM Generation for Custom Dataset 
 
-
-```
-python3 DEM\ Generation/CreateDEM.py --PCD_path <Set the path to the directory of point clouds> --DEM_save_path <Path to save the resulting DEM>
-
-```
