@@ -45,7 +45,9 @@ Please download the pretrained models from the [link]()
 
 ### Paper 
 
+
 FinderNet: A Data Augmentation Free Canonicalization aided Loop Detection and Closure technique for Point clouds in 6-DOF separation.
+
 
 If you use FinderNet please cite our paper (the preprint for now)
 
@@ -58,9 +60,4 @@ If you use FinderNet please cite our paper (the preprint for now)
 }
 ```
 
- 
-
-
-
-
-
+We welcome any suggestions to improve the readability of the code. 
