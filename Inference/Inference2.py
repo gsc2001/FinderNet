@@ -40,7 +40,7 @@ parser.add_argument('--ckpt_path' , help ='path to model  ', default= 'Model/Kit
 parser.add_argument('--total_samples_in_database', help='total number of samples in databse', default=50)
 parser.add_argument('--test_sequence_id', help='sequence id to be tested', default='00')
 parser.add_argument('--pose_base_dir', help='Base directory to the path of poses', default='/home2/sudarshan.s/Place-Recognition-Experiments/SpatialTransformer/STUpdate/FinderNetCodes/Inference/')
-parser.add_argument('--dist_threshold_for_loop_candidate', help='Total number of loop candidates to select', default=60 )
+parser.add_argument('--dist_threshold_for_loop_candidate', help='Distance radius to select loop candidates', default=60 )
 parser.add_argument('--dont_consider_past', help='set of immedaiate past point clousd to reject', default=51)
 args = parser.parse_args()
 
