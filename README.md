@@ -42,7 +42,7 @@ python3 Train/Train.py --data_path <patht to the triplet csv file> --base_path <
 ### Inference 
 
 ```
-python3 Inference/Inference2.py --base_path <Path to DEM folder> --ckpt_path <Path to the model> --pose_base_dir <Base path to the folder that consists of poses > 
+python3 Inference/Inference1.py --base_path <Path to DEM folder> --ckpt_path <Path to the model> --pose_base_dir <Base path to the folder that consists of poses > 
 
 ```
 
