@@ -8,7 +8,7 @@ We focus on the problem of LiDAR point cloud based loop detection (or Finding) a
 ![](https://github.com/gsc2001/FinderNet/blob/main/Images/ldc.GIF)
 
 
-The work is currently under review at IROS 2023. 
+The work is currently under review at IROS 2023, and repository completion in progress.
 
 PrePrint: https://arxiv.org/pdf/2304.01074.pdf
 Video: https://www.youtube.com/watch?v=1P6JMqbb_sM
