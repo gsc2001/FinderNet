@@ -6,14 +6,14 @@ import os
 import matplotlib.pyplot as plt
 import cv2
 
-SeqNum = "00"
+SeqNum = "08"
 
 parser = argparse.ArgumentParser(description='Create Train List of Triplets for the Kitti dataset')
-parser.add_argument('--poses_file', help='path to the file of point clouds' , default='/home/sudarshan/Downloads/correctedPoses/denseLidar8/' + SeqNum + '.txt')
+parser.add_argument('--poses_file', help='path to the file of point clouds' , default=SeqNum + '.txt')
 parser.add_argument('--txt_save_path', help='path to save the final txt triplet file', default='test_inner_new_' + SeqNum +'.txt')
 parser.add_argument('--NumPositives' , help='number of positive samples for a given query', default=10)
 parser.add_argument('--positive_thereshold', help='the threshold (in meters) below which we can consider a given samples as positive', default=4)
-parser.add_argument('--max_negative_value', help='maximum value to be considered negative', default=6)
+parser.add_argument('--max_negative_value', help='maximum value to be considered negative', default=30)
 parser.add_argument('--min_negative_value', help='minimum value to be considered negative', default=4.1)
 parser.add_argument('--DEM_img_path', help='the the path to DEMs for visulization', default='/home/sudarshan/CollaborativeSLAM_ws/src/CoSLAM/Experimental/CreateDEM/DEM/')
 parser.add_argument('--reject_immediate_past', help='reject the immediate scans while considering positive samples', default=51)
@@ -30,6 +30,8 @@ def GetTriplets( QPose , pose_index ):
 
 	# print(Distance)
 
+	Distance = Distance[ 0: pose_index-args.reject_immediate_past ]
+
 	indices = np.argwhere( Distance<args.positive_thereshold )
 
 	Positives = []
@@ -41,7 +43,7 @@ def GetTriplets( QPose , pose_index ):
 	
 		if( k <  len( indices) ):
 
-			if( indices[k] < pose_index - args.reject_immediate_past or indices[k] > pose_index + args.reject_immediate_past ):
+			# if( indices[k] < pose_index - args.reject_immediate_past or indices[k] > pose_index + args.reject_immediate_past ):
 
 				if(  np.linalg.norm( poses[indices[k]] - QPose) > 0.1 ):
 
