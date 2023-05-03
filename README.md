@@ -46,7 +46,7 @@ python3 Inference/Inference.py --base_path <Path to DEM folder> --ckpt_path <Pat
 
 ```
 
-Please download the pretrained models from the [link](https://drive.google.com/drive/folders/1MtWGOq4-SqnyXzflVQ-pWOxMj-aot4K?usp=share_link)
+Please download the pretrained models from the [link](https://drive.google.com/drive/folders/1MtWGOq4-SqnyXzflVQ-cpWOxMj-aot4K?usp=share_link)
 
 
 ### Paper 
